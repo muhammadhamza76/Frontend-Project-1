@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+
+}
+.menu li a{
+text-decoration: none;
+list-style: none;
+color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: hsl(0, 14%, 71%); */
+    padding:5px 40px;
+    height: 80px;
+}
+.logo img{
+    padding-top: 5px;
+    width: 180px;
+    height: 56px;
+    margin-left: 50px;
+}
+.navbar .menu{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding-right: 5%;
+}
+.banner1 {
+  background-image: url('./images/bg_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack h1, p, button vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(67%) hue-rotate(10deg) saturate(130%);
+  z-index: 0;
+}
+
+
+.banner1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 51, 102, 0.25);
+  z-index: 1;
+}
+
+.banner1 h1,
+.banner1 p,
+.banner1 button {
+  position: relative;
+  z-index: 2; 
+  /* color: white; */
+}
+
+.banner1 h1 {
+    padding-top: 4%;
+  font-size: 4rem;
+  margin-bottom: 10px;
+   max-width: 700px;
+   font-weight: 400;
+   padding-bottom: 0px;
+}
+
+.banner1 p {
+    padding-top: 1%;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.banner1 button {
+  margin-top: 50px;
+  border-radius: 05px;
+  border: none;
+}
+.banner1 button  a{
+    text-decoration: none;
+    color:#4f86f9 !important
+}
+.b1{
+   
+    height: 10%;
+    width: 13%;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#4f86f9 !important
+}
+
